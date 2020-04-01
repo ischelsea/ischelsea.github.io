@@ -154,27 +154,68 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-软件测试实训第二章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-jmeter录制脚本" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/posts/40810.html">testing two chapter</a>
+      <a class="article-title" href="/posts/3679.html">jmeter录制脚本</a>
     </h1>
   
 
         
-        <a href="/posts/40810.html" class="archive-article-date">
-  	<time datetime="2020-03-24T03:30:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+        <a href="/posts/3679.html" class="archive-article-date">
+  	<time datetime="2020-03-31T11:35:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>在 <code>file</code>目录中选择 templates..</p>
+<p><img src="/posts/3679/%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC1.png" alt="1"></p>
+<p><img src="/posts/3679/%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC2.png" alt="2"></p>
+<p><code>select</code> <code>template</code>   中选择  <code>recording</code>  （在要做接口测试时）</p>
+<p>如果要做性能测试，可以选择<code>recording with think time</code></p>
+<p><img src="/posts/3679/%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC3.png" alt="3"></p>
+<p>选完后，<code>create</code> 确认</p>
+<p>更改 <code>hostToRecord</code></p>
+<p><img src="/posts/3679/%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC4.png" alt="4"></p>
+<p>因为是要测试自己的网站，而这个网站是部署在自己电脑上的，所以此处<code>hostToRecord</code>更改为<code>127.00.1</code></p>
+<p><code>https</code> 改为 <code>http</code></p>
+<p>再次选择 <code>create</code> 创建</p>
+<p><img src="/posts/3679/%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC5.png" alt="5"></p>
+<ul>
+<li><p>知识点：LogicController：</p>
+<ul>
+<li>用来控制TestPlan的执行，如循环、分支等，或者更简单一点，就是为了分组</li>
+</ul>
+</li>
+<li><p>Thread Group下的Recording controller即是用于分组</p>
+</li>
+<li><p>view resultsTree：看执行结果</p>
+</li>
+<li><p>HTTP(S) Test Script Recorder:</p>
+<ul>
+<li>用于代理（浏览器请求需要通过这个代理再到网站，网站返回的相应也要通过这个代理，所以他要把这个请求给记下来）</li>
+</ul>
+</li>
+</ul>
+<p><img src="/posts/3679/%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC6.png" alt="6"></p>
+<p><code>port</code> 端口为8888，因为电脑上没有与这个冲突的，所以不用改</p>
+<p>下面的 <code>Target Controller</code> 是指的存放所录制脚本的地方</p>
+<p> <code>grouping</code>：一秒钟以内的请求</p>
+<p>点击上面的 <code>start</code></p>
+<p>再打开浏览器，打开设置栏，选择管理证书</p>
+<p><img src="/posts/3679/7.png" alt="7"></p>
+<p>选择证书颁发机构，选择导入</p>
+<p><img src="/posts/3679/8.png" alt="8"></p>
+<p>打开jmeter下的bin目录的apachejmetertemporaryrootca</p>
+<p>后面一直点下一步、确定之类的即可</p>
+<p>直到导入成功</p>
+
       
 
       
@@ -186,7 +227,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/posts/40810.html">展开全文 >></a>
+          <a class="article-more-a" href="/posts/3679.html">展开全文 >></a>
         </p>
       
 
@@ -216,20 +257,20 @@
 
 
   
-    <article id="post-testing-two-chapter" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-test2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/posts/18001.html">软件测试实训 第二章</a>
+      <a class="article-title" href="/posts/51705.html">test2</a>
     </h1>
   
 
         
-        <a href="/posts/18001.html" class="archive-article-date">
-  	<time datetime="2020-03-24T03:30:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+        <a href="/posts/51705.html" class="archive-article-date">
+  	<time datetime="2020-03-24T05:44:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
 </a>
         
       </header>
@@ -248,7 +289,580 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/posts/18001.html">展开全文 >></a>
+          <a class="article-more-a" href="/posts/51705.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-软件测试项目实训 第二章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/35027.html">软件测试项目实训 第二章</a>
+    </h1>
+  
+
+        
+        <a href="/posts/35027.html" class="archive-article-date">
+  	<time datetime="2020-03-24T05:38:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="2-1-软件研发中的测试"><a href="#2-1-软件研发中的测试" class="headerlink" title="2.1 软件研发中的测试"></a>2.1 软件研发中的测试</h2><h3 id="1-软件研发中的测试活动"><a href="#1-软件研发中的测试活动" class="headerlink" title="1 软件研发中的测试活动"></a>1 软件研发中的测试活动</h3><h4 id="软件测试与软件研发"><a href="#软件测试与软件研发" class="headerlink" title="软件测试与软件研发"></a>软件测试与软件研发</h4><ul>
+<li>软件测试和软件开发一样，都遵循软件工程的原理</li>
+<li>测试是软件研发的一部分，测试和开发时密切相关的</li>
+<li>测试活动是贯穿于软件项目开发的全过程的，和开发活动交互开展</li>
+</ul>
+<h4 id="软件研发生命周期的瀑布模型"><a href="#软件研发生命周期的瀑布模型" class="headerlink" title="软件研发生命周期的瀑布模型"></a>软件研发生命周期的瀑布模型</h4><p><img src="/posts/35027/C:%5CUsers%5Ccoolchelsea%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200308181809391.png" alt="image-20200308181809391"></p>
+<h4 id="尽早测试，越晚发现问题成本越高"><a href="#尽早测试，越晚发现问题成本越高" class="headerlink" title="尽早测试，越晚发现问题成本越高"></a>尽早测试，越晚发现问题成本越高</h4><p><img src="/posts/35027/C:%5CUsers%5Ccoolchelsea%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200308181920894.png" alt="image-20200308181920894"></p>
+<h4 id="软件研发中的测试环节与测试活动"><a href="#软件研发中的测试环节与测试活动" class="headerlink" title="软件研发中的测试环节与测试活动"></a>软件研发中的测试环节与测试活动</h4><p><img src="/posts/35027/C:%5CUsers%5Ccoolchelsea%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200308182011559.png" alt="image-20200308182011559"></p>
+<h4 id="研发中的测试活动：软件需求评审及i系统测试方案制定"><a href="#研发中的测试活动：软件需求评审及i系统测试方案制定" class="headerlink" title="研发中的测试活动：软件需求评审及i系统测试方案制定"></a>研发中的测试活动：软件需求评审及i系统测试方案制定</h4><ol>
+<li><p>软件需求完成后，需要进行需求的评审，此时测试人员可以：</p>
+<ul>
+<li>参与需求的评审</li>
+<li>需求确定后进行系统测试方案及计划的制订</li>
+</ul>
+</li>
+<li><p>软件总体设计完成后，进行总体设计方案评审，此时测试人员可以：</p>
+<ul>
+<li>参与总体设计方案的评审</li>
+<li>开始进行集成测试方案的制定</li>
+</ul>
+</li>
+<li><p>详细设计完成后，测试人员：</p>
+<ul>
+<li>参与详细设计的评审</li>
+<li>开始进行模块测试方案的制定</li>
+</ul>
+</li>
+<li><p>单元测试和编码一般是同步的，由开发人员自己完成的</p>
+</li>
+<li><p>整个模块开发完成后，测试人员开始进行模块测试，在这之前所有的模块测试用例应当已经准备完毕</p>
+</li>
+<li><p>模块测试后是执行集成测试和系统测试</p>
+</li>
+<li><p>软件运行维护期间则要对运行期间发现的问题进行记录和回归测试</p>
+</li>
+</ol>
+<h3 id="2-按照开发阶段对软件测试分类"><a href="#2-按照开发阶段对软件测试分类" class="headerlink" title="2 按照开发阶段对软件测试分类"></a>2 按照开发阶段对软件测试分类</h3><ul>
+<li><p>按照开发阶段划分，软件测试分为：</p>
+<ul>
+<li><p>单元测试</p>
+</li>
+<li><p>集成测试</p>
+</li>
+<li><p>系统测试</p>
+</li>
+<li><p>确认测试</p>
+</li>
+<li><p>验收测试</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h4><ul>
+<li>单元测试又称为模块测试<ul>
+<li>是针对软件设计的最小单位-程序模块进行正确性验证的测试工作</li>
+</ul>
+</li>
+<li>检查程序单元是否满足详细设计说明中的：<ul>
+<li>模块功能</li>
+<li>性能</li>
+<li>接口和设计约束</li>
+<li>发现模块内部错误</li>
+</ul>
+</li>
+<li>白盒和黑盒都会用到</li>
+</ul>
+<h4 id="集成测试"><a href="#集成测试" class="headerlink" title="集成测试"></a>集成测试</h4><ul>
+<li>集成测试<ul>
+<li>也叫组装测试</li>
+<li>或者联合测试</li>
+</ul>
+</li>
+<li>每个单元正确<ul>
+<li>组装起来不一定能正确工作</li>
+<li>所以要开展集成测试</li>
+</ul>
+</li>
+<li>主要检测单元的接口关系<ul>
+<li>集成为符合概要设计要求的更大的组件</li>
+</ul>
+</li>
+</ul>
+<h4 id="确认测试"><a href="#确认测试" class="headerlink" title="确认测试"></a>确认测试</h4><ul>
+<li>检测软件是否满足软件需求说明书中规定的要求</li>
+</ul>
+<h4 id="系统测试"><a href="#系统测试" class="headerlink" title="系统测试"></a>系统测试</h4><ul>
+<li>将同股集成测试的软件<ul>
+<li>作为整个基于计算机系统的一个元素</li>
+<li>与计算机硬件，外设，某些支持软件、数据和人员等其他元素结合在一起</li>
+<li>在实际或模拟环境下进行测试</li>
+</ul>
+</li>
+<li>目的是：<ul>
+<li>通过与系统的需求定义作比较</li>
+<li>发现与系统定义不一致的地方</li>
+</ul>
+</li>
+</ul>
+<h4 id="验收测试"><a href="#验收测试" class="headerlink" title="验收测试"></a>验收测试</h4><ul>
+<li>按照项目任务书或合同的验收依据对整个系统进行测试与评审</li>
+<li>决定是否接受系统</li>
+</ul>
+<h2 id="2-2-软件测试模型"><a href="#2-2-软件测试模型" class="headerlink" title="2.2 软件测试模型"></a>2.2 软件测试模型</h2><ul>
+<li><h3 id="软件测试模型背景："><a href="#软件测试模型背景：" class="headerlink" title="软件测试模型背景："></a>软件测试模型背景：</h3><ul>
+<li>测试与开发密切相关，通过实践产生了许多测试模型</li>
+<li>这些模型将测试活动进行了抽象<ul>
+<li>明确了测试与开发之间的关系</li>
+<li>是测试管理的重要参考依据</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="常见的软件测试模型"><a href="#常见的软件测试模型" class="headerlink" title="常见的软件测试模型"></a>常见的软件测试模型</h3><ul>
+<li>V模型</li>
+<li>W模型</li>
+<li>H模型</li>
+<li>X模型</li>
+<li>前置测试模型</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="软件研发生命周期的瀑布模型-1"><a href="#软件研发生命周期的瀑布模型-1" class="headerlink" title="软件研发生命周期的瀑布模型"></a>软件研发生命周期的瀑布模型</h3><ul>
+<li>计划时期：<ul>
+<li>问题定义</li>
+<li>可行性研究</li>
+</ul>
+</li>
+<li>开发时期：<ul>
+<li>需求分析</li>
+<li>概要设计</li>
+<li>详细设计</li>
+<li>编码</li>
+<li>测试</li>
+</ul>
+</li>
+<li>运行时期：<ul>
+<li>运行与维护</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="软件测试模型：V模型"><a href="#软件测试模型：V模型" class="headerlink" title="软件测试模型：V模型"></a>软件测试模型：V模型</h3><ul>
+<li>来源：<ul>
+<li>软件开发的瀑布模型</li>
+</ul>
+</li>
+<li>特点：<ul>
+<li>说明了基本的开发过程和测试行为</li>
+<li>明确地标识了测试过程中存在的不同级别以及测试阶段和开发各阶段的关系</li>
+</ul>
+</li>
+<li>局限性：<ul>
+<li>测试对象只有程序代码</li>
+<li>测试作为编码后的活动，未体现“尽早测试”的原则</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="软件测试模型：W模型"><a href="#软件测试模型：W模型" class="headerlink" title="软件测试模型：W模型"></a>软件测试模型：W模型</h3><ul>
+<li>演化来源：<ul>
+<li>V模型</li>
+</ul>
+</li>
+<li>与V模型区别：<ul>
+<li>增加了与软件开发阶段同步进行的测试</li>
+</ul>
+</li>
+<li>强调：<ul>
+<li>测试伴随整个软件开发周期</li>
+<li>测试对象不仅是程序，需求、功能和设计同样要测试</li>
+<li>测试与开发同步进行，有利于尽早发现问题</li>
+</ul>
+</li>
+<li>局限性：<ul>
+<li>W与V模型<ul>
+<li>均把软件开发视为需求、设计、编码等一系列串行的活动</li>
+<li>无法支持迭代以及变更调整</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="软件测试模型：H模型"><a href="#软件测试模型：H模型" class="headerlink" title="软件测试模型：H模型"></a>软件测试模型：H模型</h3><ul>
+<li>强调：<ul>
+<li>测试活动<ul>
+<li>独立</li>
+<li>贯穿于整个产品周期</li>
+<li>与研发流程并发</li>
+</ul>
+</li>
+<li>循环：<ul>
+<li>测试点准备就绪即可执行测试</li>
+</ul>
+</li>
+<li>测试<ul>
+<li>可尽早进行</li>
+<li>可对被测对象分层次、反复测试</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>某一次测试过程：<ul>
+<li>测试准备</li>
+<li>测试就绪点</li>
+<li>其他流程</li>
+<li>测试执行</li>
+<li>测试流程</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="软件测试模型：其他测试模型"><a href="#软件测试模型：其他测试模型" class="headerlink" title="软件测试模型：其他测试模型"></a>软件测试模型：其他测试模型</h3><ul>
+<li>X测试模型:<ul>
+<li>特点：<ul>
+<li>认为”学院派的V模型“不能处理开发的实际时间过程</li>
+<li>比如：<ul>
+<li>频繁重复的集成</li>
+<li>需求文档的缺乏</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>内容：<ul>
+<li>针对单独程序片段所进行的相互分离的编码和测试</li>
+<li>此后进行贫乏明年的交接</li>
+<li>通过集成最终成为可执行的程序</li>
+<li>然后再对这些可执行程序进行测试</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>前置测试模型：<ul>
+<li>测试与开发紧密结合</li>
+<li>对每个交付内容进行测试<ul>
+<li>eg：<ul>
+<li>设计文档</li>
+<li>可行性报告</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>交付内容一旦完成，立即进行测试</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="测试模型的使用："><a href="#测试模型的使用：" class="headerlink" title="测试模型的使用："></a>测试模型的使用：</h3><ul>
+<li>模型对工作开展有重要意义<ul>
+<li>但每个模型都不是完美的</li>
+</ul>
+</li>
+<li>灵活运用各个模型的优点<ul>
+<li>还要考虑项目的实际情况</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-3-软件测试的流程"><a href="#2-3-软件测试的流程" class="headerlink" title="2.3 软件测试的流程"></a>2.3 软件测试的流程</h2><h3 id="1-软件测试的流程"><a href="#1-软件测试的流程" class="headerlink" title="1.软件测试的流程"></a>1.软件测试的流程</h3><h4 id="测试流程内容："><a href="#测试流程内容：" class="headerlink" title="测试流程内容："></a>测试流程内容：</h4><ul>
+<li>测试过程定义了<ul>
+<li>企业在产品开发过程中在<ul>
+<li>设计</li>
+<li>开发与实现</li>
+<li>维护</li>
+<li>退出</li>
+</ul>
+</li>
+<li>等阶段 与测试相关活动的<ul>
+<li>内容</li>
+<li>流程</li>
+<li>规范</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>测试过程指导：<ul>
+<li>项目如何开展各项测试活动</li>
+<li>以及各项活动的输入输出</li>
+</ul>
+</li>
+<li>测试过程<ul>
+<li>约定活动中所设计的角色与职责</li>
+<li>规范各个活动的内容和章程<ul>
+<li>以及所使用到的统一的<ul>
+<li>模版</li>
+<li>表单</li>
+<li>指导书</li>
+<li>检查单</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="测试流程的作用"><a href="#测试流程的作用" class="headerlink" title="测试流程的作用"></a>测试流程的作用</h4><ul>
+<li>给公司在产品开发过程中测试相关的活动<ul>
+<li>提供指导</li>
+<li>确保产品可以真正满足用户要求</li>
+</ul>
+</li>
+</ul>
+<h4 id="测试与开发关系"><a href="#测试与开发关系" class="headerlink" title="测试与开发关系"></a>测试与开发关系</h4><ul>
+<li>软件项目中测试与开发相互配合、同步推进<ul>
+<li>软件项目的复杂性被测对象往往不断变化</li>
+<li>实际项目中测试与开发的关系更加复杂</li>
+</ul>
+</li>
+<li>虽然测试与开发关系复杂，但测试工作的开展有自己的过程要遵循</li>
+<li>对单次测试来说，存在一个一般性的过程</li>
+</ul>
+<h4 id="软件测试一般性过程"><a href="#软件测试一般性过程" class="headerlink" title="软件测试一般性过程"></a>软件测试一般性过程</h4><ol>
+<li>需求分析阶段<ul>
+<li>收集相关资料</li>
+<li>学习业务（测试对象）</li>
+<li>分析测试需求点</li>
+</ul>
+</li>
+<li>测试计划阶段：<ul>
+<li>测试主管<ul>
+<li>组织编写《测试计划》</li>
+<li>该文档指明<ul>
+<li>测试范围</li>
+<li>方法</li>
+<li>资源</li>
+<li>相应测试活动人员时间进度安排</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>测试计划<ul>
+<li>需要进行评审</li>
+<li>测试计划一旦开始执行<ul>
+<li>就要定期监控计划的执行情况</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>测试设计与开发<ul>
+<li>测试设计<ul>
+<li>一般由对需求熟悉的资深测试工程师设计</li>
+<li>为每个测试点设计出包括<ul>
+<li>需求点简介</li>
+<li>测试思路</li>
+<li>详细测试方法</li>
+</ul>
+</li>
+<li>三部分的方法</li>
+</ul>
+</li>
+<li>测试开发主要完成：<ul>
+<li>测试用例编写</li>
+<li>测试数据准备</li>
+<li>测试环境准备</li>
+</ul>
+</li>
+<li>测试设计与测试用例完成后需要进行评审</li>
+</ul>
+</li>
+<li>测试执行及报告<ul>
+<li>执行测试用例</li>
+<li>及时提交<ul>
+<li>有质量的bug</li>
+<li>测试阶段报告<ul>
+<li>反馈测试情况</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>软件评估报告及批准<ul>
+<li>根据测试结果给出<ul>
+<li>对软件的整体评估</li>
+<li>是否通过测的建议</li>
+</ul>
+</li>
+<li>一般决策部门<ul>
+<li>会根据这份评估报告决定产品是否可以发布vy</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>测试总结及资产归档<ul>
+<li>结项阶段<ul>
+<li>对整个过程进行回顾总结</li>
+<li>将项目相关资源进行整理归档</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-软件测试流程的建立和维护"><a href="#2-软件测试流程的建立和维护" class="headerlink" title="2 软件测试流程的建立和维护"></a>2 软件测试流程的建立和维护</h3><h4 id="创建软件测试流程注意事项"><a href="#创建软件测试流程注意事项" class="headerlink" title="创建软件测试流程注意事项"></a>创建软件测试流程注意事项</h4><ul>
+<li>从实际情况出发<ul>
+<li>优化流程</li>
+<li>解决问题u</li>
+</ul>
+</li>
+<li>重点考虑四个问题：<ul>
+<li>哪些测试要做</li>
+<li>谁做</li>
+<li>什么时间做</li>
+<li>如何做</li>
+</ul>
+</li>
+</ul>
+<h4 id="创建测试流程步骤"><a href="#创建测试流程步骤" class="headerlink" title="创建测试流程步骤"></a>创建测试流程步骤</h4><ul>
+<li>对当前存在的问题进行收集、诊断分析</li>
+<li>根据实际情况建立新的流程</li>
+<li>流程发布和试运行</li>
+<li>促进流程的执行、收集问题</li>
+<li>流程更新和发布</li>
+</ul>
+<h4 id="测试执行-VS-测试过程执行"><a href="#测试执行-VS-测试过程执行" class="headerlink" title="测试执行 VS 测试过程执行"></a>测试执行 VS 测试过程执行</h4><ul>
+<li>测试执行<ul>
+<li>按照测试计划去执行测试活动</li>
+</ul>
+</li>
+<li>测试过程执行<ul>
+<li>是严格按照测试的过程去开展测试活动</li>
+</ul>
+</li>
+</ul>
+<h4 id="测试流程不是静止的"><a href="#测试流程不是静止的" class="headerlink" title="测试流程不是静止的"></a>测试流程不是静止的</h4><ul>
+<li>测试过程创建后不是一成不变</li>
+<li>而是根据实际实践情况不断改进和完善</li>
+<li>进行修订后要及时进行过程发布</li>
+</ul>
+<h4 id="促进测试过程的执行"><a href="#促进测试过程的执行" class="headerlink" title="促进测试过程的执行"></a>促进测试过程的执行</h4><ul>
+<li>一般在测试过程执行中<ul>
+<li>要设置一定的机制</li>
+<li>去保证测试人员按照测试过程开展测试活动</li>
+</ul>
+</li>
+<li>促进测试的执行<ul>
+<li>QA人员对项目的监督和指导</li>
+<li>组织级审计</li>
+</ul>
+</li>
+</ul>
+<h4 id="测试流程的改进"><a href="#测试流程的改进" class="headerlink" title="测试流程的改进"></a>测试流程的改进</h4><ul>
+<li>测试流程<ul>
+<li>在每一轮执行完毕后</li>
+<li>根据所执行情况对流程进行更新和完善</li>
+<li>用好的实践去更新完善流程</li>
+</ul>
+</li>
+</ul>
+<h4 id="测试过程中涉及的文档等资产"><a href="#测试过程中涉及的文档等资产" class="headerlink" title="测试过程中涉及的文档等资产"></a>测试过程中涉及的文档等资产</h4><ul>
+<li>测试计划文档</li>
+<li>测试方案文档</li>
+<li>测试用例</li>
+<li>测试报告</li>
+<li>测试缺陷库</li>
+<li>其他<ul>
+<li>新开发或引入的测试工具</li>
+<li>测试工作会议记录<ul>
+<li>测试计划</li>
+<li>测试方案</li>
+<li>测试用例<ul>
+<li>的评审报告</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>测试总结</li>
+<li>测试原始数据以及度量数据</li>
+<li>测试日志<ul>
+<li>每天测试日程记录</li>
+</ul>
+</li>
+<li>周期性测试报告</li>
+<li>任务报告：<ul>
+<li>任务完成情况报告</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="测试方案文档"><a href="#测试方案文档" class="headerlink" title="测试方案文档"></a>测试方案文档</h4><ul>
+<li>描述<ul>
+<li>为完成软件特性的测试而采用的测试方法的细节</li>
+</ul>
+</li>
+<li>主要内容：<ul>
+<li>概述</li>
+<li>被测对象</li>
+<li>应测试的特性</li>
+<li>不被测试的特性</li>
+<li>测试模型</li>
+<li>测试需求</li>
+<li>测试设计</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/posts/35027.html">展开全文 >></a>
         </p>
       
 
@@ -784,6 +1398,7 @@
 <p><code>hexo clean</code></p>
 <p><code>hexo g</code></p>
 <p><code>hexo s</code></p>
+<p>图片引用：<img src="/posts/16107/%E5%9B%BE%E7%89%87%E5%90%8D.jpg" alt="你想输入的替代文字"></p>
 
       
 
