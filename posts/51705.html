@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.1.1"></head>
+<meta name="generator" content="Hexo 4.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -53,7 +53,7 @@
     
     <a href="/" class="waves-effect waves-light">
       
-      <i class="/assets/logo.png" style="zoom: 0.6;"></i>
+      <i class="fas fa-index" style="zoom: 0.6;"></i>
       
       <span>Index</span>
     </a>
@@ -111,17 +111,6 @@
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
       <span>Contact</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>Friends</span>
     </a>
     
   </li>
@@ -198,7 +187,7 @@
 	  
 		<a href="/" class="waves-effect waves-light">
 			
-			    <i class="fa-fw /assets/logo.png"></i>
+			    <i class="fa-fw fas fa-index"></i>
 			
 			Index
 		</a>
@@ -256,17 +245,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			Contact
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			Friends
 		</a>
           
         </li>
@@ -545,7 +523,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    52
                 </div>
                 
 
@@ -558,7 +536,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1050,7 +1046,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6k</span>&nbsp;字
+                class="white-color">6.4k</span>&nbsp;字
             
             
             
