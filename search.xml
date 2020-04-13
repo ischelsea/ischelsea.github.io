@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>7.4 性能测试</title>
+      <link href="/posts/11040.html"/>
+      <url>/posts/11040.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何确定性能需求"><a href="#如何确定性能需求" class="headerlink" title="如何确定性能需求"></a>如何确定性能需求</h1><h2 id="性能指标预期来源"><a href="#性能指标预期来源" class="headerlink" title="性能指标预期来源"></a>性能指标预期来源</h2><ol><li><strong>最终用户的体验</strong>      eg:2-5-10原则</li><li><strong>商业需求</strong>        eg：”比竞争对手的产品好”</li><li><strong>技术需求</strong>        eg：”cpu使用率不超过70%”</li><li><strong>标准要求</strong></li></ol><h2 id="包含下列性能指标："><a href="#包含下列性能指标：" class="headerlink" title="包含下列性能指标："></a>包含下列性能指标：</h2><ol><li><strong>时间</strong> time<ul><li>响应时间</li><li>页面下载时间等等</li></ul></li><li><strong>容量</strong> capacity<ul><li>正常工作能承受的最大负载</li><li>eg：<ul><li>最大并发用户数</li><li>最大数据容量</li><li>最大在线用户数</li></ul></li></ul></li><li><strong>吞吐量</strong> throughput<ul><li>eg：<ul><li>每秒请求数RPS</li><li>每秒点击数HPS</li><li>每秒事务数TPS</li><li>每秒接受或发送的数据量等</li></ul></li></ul></li><li><strong>系统资源利用率</strong> utilization<ul><li>eg：<ul><li>cpu</li><li>memory<ul><li>使用率</li></ul></li><li>等等</li></ul></li></ul></li></ol><h2 id="不同角色对于性能指标关注什么"><a href="#不同角色对于性能指标关注什么" class="headerlink" title="不同角色对于性能指标关注什么"></a>不同角色对于性能指标关注什么</h2><h3 id="用户："><a href="#用户：" class="headerlink" title="用户："></a>用户：</h3><ul><li>响应时间</li></ul><h3 id="产品市场团队"><a href="#产品市场团队" class="headerlink" title="产品市场团队"></a>产品市场团队</h3><ul><li>容量</li><li>数据吞吐量</li></ul><h3 id="开发团队"><a href="#开发团队" class="headerlink" title="开发团队"></a>开发团队</h3><ul><li>系统资源占用率</li></ul><h1 id="性能测试类型"><a href="#性能测试类型" class="headerlink" title="性能测试类型"></a>性能测试类型</h1><h1 id="性能测试步骤"><a href="#性能测试步骤" class="headerlink" title="性能测试步骤"></a>性能测试步骤</h1><h1 id="一些常见的性能问题"><a href="#一些常见的性能问题" class="headerlink" title="一些常见的性能问题"></a>一些常见的性能问题</h1><h1 id="容量测试"><a href="#容量测试" class="headerlink" title="容量测试"></a>容量测试</h1><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.3 负载测试技术</title>
+      <link href="/posts/19168.html"/>
+      <url>/posts/19168.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="pre：演示一个使用JMETER的例子"><a href="#pre：演示一个使用JMETER的例子" class="headerlink" title="pre：演示一个使用JMETER的例子"></a>pre：演示一个使用JMETER的例子</h1><h2 id="背景要求："><a href="#背景要求：" class="headerlink" title="背景要求："></a>背景要求：</h2><p>当120个用户同时访问ecshop,其中所有的用户会访问首页并搜索商品</p><p>要求平均响应时间&lt;=2000ms,并且cpu的利用率&lt;=75%</p><h2 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h2><p>先启动xapp，把apache和mysql打开</p><p><img src="/posts/19168/Xapp.png" alt="Xapp"></p><p>jmeter启动测试计划 <code>pre7.3</code></p><p><img src="/posts/19168/jmeter.png" alt="jmeter"></p><ul><li><code>User</code> <code>Defined</code> <code>Variable</code><ul><li>用户定义变量</li></ul></li><li><code>HTTP Request Defaults</code><ul><li>HTTP请求的默认值</li></ul></li><li><code>HTTP Cookie Manager</code><ul><li>http cookie管理器</li></ul></li><li><code>Thread Group</code><ul><li>线程</li><li>模仿用户给服务器发请求</li><li>![thread group](7-3-负载测试技术/thread group.png)<ul><li><code>number of threads</code>:<ul><li>线程数</li></ul></li><li><code>ramp-up preriod</code><ul><li>执行完这些线程所用的时间 （秒数）</li></ul></li><li><code>loop</code> <code>count</code><ul><li>循环次数</li><li>infinite:无限循环</li></ul></li></ul></li></ul></li></ul><p><img src="/posts/19168/%E9%87%87%E6%A0%B7%E5%99%A8.png" alt="采样器"></p><p><code>uniform random timer</code></p><p><img src="/posts/19168/%E5%AE%9A%E6%97%B6%E5%99%A8.png" alt="定时器"></p><ul><li>采样器 就是发请求出去</li><li>有请求发出去，则自然要有监听器</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.2 负载测试 压力测试 性能测试</title>
+      <link href="/posts/60505.html"/>
+      <url>/posts/60505.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="背景及其分析"><a href="#背景及其分析" class="headerlink" title="背景及其分析"></a>背景及其分析</h1><h2 id="性能调优："><a href="#性能调优：" class="headerlink" title="性能调优："></a>性能调优：</h2><ul><li>指系统性能改善是<ul><li>测试</li><li>调整</li><li>再测试</li><li>再调整</li><li>…<ul><li>一个持续改进的过程</li></ul></li></ul></li><li>需要借助负载测试方法</li></ul><h2 id="负载测试-load-test"><a href="#负载测试-load-test" class="headerlink" title="负载测试 load test"></a>负载测试 load test</h2><ul><li>可看成是 <strong>性能测试</strong> 采用的一种技术</li></ul><h2 id="压力测试"><a href="#压力测试" class="headerlink" title="压力测试"></a>压力测试</h2><ul><li>可看作 <strong>负载测试</strong> 的一种</li><li>即  <strong>高负载</strong> 下的 <strong>负载测试</strong></li></ul><h2 id="容量测试-capacity-test"><a href="#容量测试-capacity-test" class="headerlink" title="容量测试 capacity test"></a>容量测试 capacity test</h2><ul><li>用 <strong>负载测试</strong> 技术来实现</li><li><strong>压力测试</strong> 可附带做 <strong>容量测试</strong></li></ul><h2 id="负载测试与性能测试相似性"><a href="#负载测试与性能测试相似性" class="headerlink" title="负载测试与性能测试相似性"></a>负载测试与性能测试相似性</h2><ul><li>测试方法接近</li><li>都关注系统性能</li><li>多数情况下用相同测试工具</li></ul><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><h2 id="负载测试-load-rest"><a href="#负载测试-load-rest" class="headerlink" title="负载测试 load rest"></a>负载测试 load rest</h2><ul><li>通过模拟实际软件系统所承受的<ul><li>负载条件</li><li>改变系统负载大小</li><li>负载方式<ul><li>来发现系统中所存在的问题</li></ul></li></ul></li><li>负载大小可以是<ul><li>并发请求的数量(RPS 每秒请求数)</li><li>并发用户数量</li><li>数据库大小</li><li>收发数据大小</li><li>等等</li></ul></li></ul><h2 id="压力测试-1"><a href="#压力测试-1" class="headerlink" title="压力测试"></a>压力测试</h2><ul><li>是在 <strong>强负载</strong> 情况下稳定性进行测试</li><li>查看应用系统在 <strong>峰值</strong>（瞬间使用高峰）使用情况下的行为表现</li><li>更有效地发现系统 <strong>稳定性的隐患</strong> 和系统在负载峰值的条件下 <strong>功能隐患</strong> 等</li><li>确认系统是否具有良好的 <strong>容错</strong> 能力和 <strong>可恢复</strong> 能力</li></ul><h2 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h2><ul><li>是为了 <strong>获取</strong> 或 <strong>验证</strong> 系统性能指标</li><li>或为了发现 <strong>性能瓶颈</strong> 而进行的测试</li></ul><h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><h2 id="性能测试-1"><a href="#性能测试-1" class="headerlink" title="性能测试"></a>性能测试</h2><ul><li>测试被测系统是否满足 <strong>预期性能目标</strong></li></ul><h2 id="负载测试"><a href="#负载测试" class="headerlink" title="负载测试"></a>负载测试</h2><ul><li>测试被测试系统</li><li>在 <strong>服务器安全范围</strong> 内的 <strong>最大负载值</strong></li></ul><h2 id="压力测试-2"><a href="#压力测试-2" class="headerlink" title="压力测试"></a>压力测试</h2><ul><li>测试被测试系统</li><li>在 <strong>超过服务器安全范围</strong> 所能承受的 <strong>最大压力值</strong></li></ul><h2 id="稳定性测试"><a href="#稳定性测试" class="headerlink" title="稳定性测试"></a>稳定性测试</h2><ul><li>测试被测系统在 <strong>长时间的压力</strong> 下的 <strong>稳定性</strong></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>软件工程基础知识简介</title>
       <link href="/posts/18088.html"/>
       <url>/posts/18088.html</url>
