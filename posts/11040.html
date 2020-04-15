@@ -541,7 +541,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    290
+                    872
                 </div>
                 
 
@@ -609,7 +609,61 @@
 <h3 id="开发团队"><a href="#开发团队" class="headerlink" title="开发团队"></a>开发团队</h3><ul>
 <li>系统资源占用率</li>
 </ul>
-<h1 id="性能测试类型"><a href="#性能测试类型" class="headerlink" title="性能测试类型"></a>性能测试类型</h1><h1 id="性能测试步骤"><a href="#性能测试步骤" class="headerlink" title="性能测试步骤"></a>性能测试步骤</h1><h1 id="一些常见的性能问题"><a href="#一些常见的性能问题" class="headerlink" title="一些常见的性能问题"></a>一些常见的性能问题</h1><h1 id="容量测试"><a href="#容量测试" class="headerlink" title="容量测试"></a>容量测试</h1><script>
+<h1 id="性能测试类型"><a href="#性能测试类型" class="headerlink" title="性能测试类型"></a>性能测试类型</h1><h2 id="性能验证测试"><a href="#性能验证测试" class="headerlink" title="性能验证测试"></a>性能验证测试</h2><ul>
+<li>验证事先已定义的系统性能指标、系统能否满足系统的性能需求</li>
+</ul>
+<h2 id="性能基准测试"><a href="#性能基准测试" class="headerlink" title="性能基准测试"></a>性能基准测试</h2><ul>
+<li>在系统标准配置下获得有关的性能指标数据，作为将来性能改进的基准线</li>
+</ul>
+<h2 id="性能规划测试"><a href="#性能规划测试" class="headerlink" title="性能规划测试"></a>性能规划测试</h2><ul>
+<li>在多种 <strong>特定</strong> 的环境下，获得 <strong>不同配置</strong> 的系统的 <strong>性能指标</strong> ，从而决定在系统部署时采用什么样的 <strong>软</strong>、<strong>硬件配置</strong></li>
+</ul>
+<h2 id="容量测试"><a href="#容量测试" class="headerlink" title="容量测试"></a>容量测试</h2><ul>
+<li>可以看作是 <strong>性能</strong> 的测试的一种</li>
+<li>因为系统的容量可以看作 <strong>系统性能指标</strong> 之一</li>
+</ul>
+<h1 id="性能测试步骤"><a href="#性能测试步骤" class="headerlink" title="性能测试步骤"></a>性能测试步骤</h1><ol>
+<li>确定性能测试 <strong>需求</strong></li>
+<li><strong>计划和设计测试</strong> ；包括确定关键业务流程、测试类型和测试方法，选择合适的测试工具、设计测试场景等等</li>
+<li><strong>测试工具</strong> 的选择</li>
+<li>配置 <strong>测试环境</strong>、尽量接近实际运行环境、即建立仿真环境作为性能测试环境，测试结果才能可信</li>
+<li>实现 <strong>测试设计</strong>（开发测试脚本）</li>
+<li><strong>执行测试</strong></li>
+<li><strong>分析</strong> 测试结果</li>
+<li>重复4-6步骤，直至 <strong>测试计划完成</strong> ，结果 <strong>满意</strong></li>
+<li>提交 <strong>性能测试报告</strong></li>
+</ol>
+<h1 id="一些常见的性能问题"><a href="#一些常见的性能问题" class="headerlink" title="一些常见的性能问题"></a>一些常见的性能问题</h1><ul>
+<li><strong>资源泄漏</strong>，包括内存泄漏</li>
+<li><strong>资源瓶颈</strong>，内部资源（线程、放入池的对象）变得稀疏</li>
+<li>cpu使用率达到<strong>100</strong>%、系统 <strong>被锁定</strong> （eg：鼠标键盘不响应）等等</li>
+<li>线程 <strong>死锁</strong>、线程 <strong>阻塞</strong> 等等</li>
+<li><strong>数据库连接</strong> 成为性能瓶颈（数据库连接时间过长）</li>
+<li>查询 <strong>速度慢</strong> 或 列表 <strong>效率低</strong>（eg:没用上索引）</li>
+<li>受 <strong>外部系统影响</strong> 越来越大</li>
+</ul>
+<h1 id="容量测试-1"><a href="#容量测试-1" class="headerlink" title="容量测试"></a>容量测试</h1><h2 id="容量测试的定义"><a href="#容量测试的定义" class="headerlink" title="容量测试的定义"></a>容量测试的定义</h2><ul>
+<li><p><strong>capacity</strong> test</p>
+</li>
+<li><p>通过负载测试或其它测试方法，预先分析出反应软件系统应用特征的某项指标的极限值（eg：最大并发用户数、数据库记录数等等）</p>
+</li>
+<li><p>在其极限值状态下系统主要功能还能保持正常运行</p>
+</li>
+</ul>
+<h2 id="与其他测试的关系"><a href="#与其他测试的关系" class="headerlink" title="与其他测试的关系"></a>与其他测试的关系</h2><ul>
+<li>属于性能测试的一种</li>
+</ul>
+<h2 id="采用的方法"><a href="#采用的方法" class="headerlink" title="采用的方法"></a>采用的方法</h2><ul>
+<li>一般采用 逐步加载 的负载测试方法</li>
+<li>也可以<ul>
+<li>先采用 <strong>逐步加载</strong> 的方式</li>
+<li>获得一个 基本的 <strong>容量值或容量范围</strong></li>
+<li>再考虑用 <strong>一次性加载方式</strong></li>
+<li>来决定 <strong>实际可支持</strong> 的 <strong>容量值</strong></li>
+</ul>
+</li>
+</ul>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -863,30 +917,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/11040.html">
+                <a href="/posts/27406.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpeg" class="responsive-img" alt="7.4 性能测试">
+                        <img src="/medias/featureimages/12.jpeg" class="responsive-img" alt="7.5 压力测试">
                         
-                        <span class="card-title">7.4 性能测试</span>
+                        <span class="card-title">7.5 压力测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            软件性能测试第7.4节 性能测试
+                            软件性能测试第7.5节 压力测试
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-14
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -899,7 +952,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1150,7 +1202,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">8.4k</span>&nbsp;字
+                class="white-color">12.3k</span>&nbsp;字
             
             
             

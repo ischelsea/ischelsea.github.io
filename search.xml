@@ -4,11 +4,198 @@
   
     
     <entry>
+      <title>7-10-可靠性测试</title>
+      <link href="/posts/41234.html"/>
+      <url>/posts/41234.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="软件可靠性定义"><a href="#软件可靠性定义" class="headerlink" title="软件可靠性定义"></a>软件可靠性定义</h1><ul><li>软件可靠性<ul><li>是软件系统在规定的时间内及规定的环境条件下</li><li>完成规定功能的能力</li></ul></li></ul><h1 id="软件可靠性三要素"><a href="#软件可靠性三要素" class="headerlink" title="软件可靠性三要素"></a>软件可靠性三要素</h1><ul><li>规定的时间</li><li>规定的运行环境条件</li><li>规定的功能</li></ul><h1 id="可靠性的度量"><a href="#可靠性的度量" class="headerlink" title="可靠性的度量"></a>可靠性的度量</h1><ul><li>可靠性的最常用的度量<ul><li>是平均无故障时间</li></ul></li><li>例如：<ul><li>通过压力测试</li><li>并借助<ul><li>软件失效模式</li><li>影响分析<ul><li>来获得有关可靠性数据</li></ul></li></ul></li></ul></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.9 容错性测试</title>
+      <link href="/posts/54896.html"/>
+      <url>/posts/54896.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="容错性测试的分类"><a href="#容错性测试的分类" class="headerlink" title="容错性测试的分类"></a>容错性测试的分类</h1><ul><li>负面测试</li><li>故障转移测试</li></ul><h1 id="场景设置"><a href="#场景设置" class="headerlink" title="场景设置"></a>场景设置</h1><ul><li><p>容错性测试就是</p><ul><li>在各种异常条件下对系统的功能进行测试</li><li>以检验系统是否具有防护性的举措或者某种灾难性恢复的手段或能力</li></ul></li><li><p>容错性可分为两个层次：</p><ul><li>功能层次的容错性测试<ul><li>也称 <strong>负面</strong> 测试<ul><li>negative test</li></ul></li><li>或 <strong>例外</strong> 测试<ul><li>exception test</li></ul></li></ul></li><li>系统层次的容错性测试<ul><li>主要是<ul><li>灾难恢复性测试</li><li>故障转移测试</li></ul></li></ul></li></ul></li></ul><h1 id="负面测试"><a href="#负面测试" class="headerlink" title="负面测试"></a>负面测试</h1><ul><li><p>负面测试</p><ul><li>是从<strong>逆向思维</strong>出发</li><li>检查系统在 <strong>异常条件</strong> 下或用户的 <strong>非法操作</strong> 下系统是如何 <strong>响应</strong> 的</li><li>是否有 <strong>异常行为</strong> 或执行了 <strong>不应该执行的动作</strong></li></ul></li><li><p>无效等价类的测试用例就是一种 <strong>负面的测试</strong></p></li><li><p>在一些 <strong>异常的</strong> 或 <strong>恶劣</strong>的条件下进行操作</p></li><li><p><strong>探索式</strong> 测试</p></li></ul><h1 id="故障转移机制"><a href="#故障转移机制" class="headerlink" title="故障转移机制"></a>故障转移机制</h1><p><img src="/posts/54896/%E6%95%85%E9%9A%9C%E8%BD%AC%E7%A7%BB%E6%9C%BA%E5%88%B6.jpg" alt="故障转移机制"></p><h1 id="故障转移测试"><a href="#故障转移测试" class="headerlink" title="故障转移测试"></a>故障转移测试</h1><ul><li>故障转移测试<ul><li>就是验证 <strong>故障转移机制</strong> 能否 <strong>正常实现</strong>，满足事先的设计要求</li><li>是在 <strong>软件系统发生故障</strong> 的情况下<ul><li>去检验系统的恢复能力</li><li>验证系统已保存的用户数据是否丢失</li><li>系统和数据是否能尽快恢复或在指定时间内恢复</li><li>包括<ul><li>验证重新初始化</li><li>检查点</li><li>数据恢复</li><li>重新启动<ul><li>等机制的正确性</li></ul></li></ul></li></ul></li></ul></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>美国文学绪论</title>
+      <link href="/posts/28139.html"/>
+      <url>/posts/28139.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Outline"><a href="#Outline" class="headerlink" title="Outline"></a>Outline</h1><ol><li>The Literature of Colonial America<ul><li>Puritan Thoughts</li></ul></li><li>The Literature of Reason and Revolution<ul><li>American Enlightenment</li><li>Benjamin Franklin: The Autobiography</li><li>Philip Freneau:The Wild Honey Suckle </li></ul></li><li>The Literature of Romanticism<ul><li>American Romanticism</li><li>Washington Irving: The Legend of Sleepy Hollow</li><li>William Cullen Bryant:To a Waterfowl</li><li>Edgar Allan Poe: To Helen; Annabel Lee;The Fall of the House of Usher</li><li>Transcendentalism</li><li>Henry David Thoreau:Walden</li><li>Nathaniel Hawthorne :The Scarlet Letter</li><li>Herman Melville:Moby Dick</li><li>Henry Wadsworth Longfellow:A Psalm of Life</li></ul></li><li>The Literature of Realism<ul><li>American Realism</li><li>free verse</li><li>Walt Whitman: Song of Myself</li><li>Emily Dickinson:I heard a Fly buzz—when I died</li><li>Mark Twain:The Adventures of Tom Sawyer</li><li>Henry James:The Portrait of a Lady</li><li>American Naturalism</li><li>Jack London:The Sea-Wolf,Martin Eden</li><li>Theodore Dreiser:Sister Carrie</li></ul></li><li>Twentieth-Century Literature<ul><li>Modernism</li><li>Imagism</li><li>Ezra Pound:In a Station of the Metro</li><li>Robert Frost:The Road Not Taken;Stopping by Woods on a Snowy Evening</li><li>Carl Sandburg:Chicago</li><li>F.Scott Fitzgerald:The Great Gatsby</li><li>Ernest Hemingway:A Farewell to Arms</li><li>John Steinbeck:The Grapes of Wrath</li><li>William Faulkner:A Rose for Emily</li></ul></li></ol><h1 id="The-Literature-of-Colonial-America"><a href="#The-Literature-of-Colonial-America" class="headerlink" title="The Literature of Colonial America"></a>The Literature of Colonial America</h1><h2 id="historical-introduction"><a href="#historical-introduction" class="headerlink" title="historical introduction"></a>historical introduction</h2><ul><li><p>The colonial period stretched roughly from the settlement of America in the early 17th century through the end of the 18th.</p><ul><li>The first permanent settlement in America was established by English in 1607.</li><li>(A group of people was sent by the English <strong>King James I</strong> to hunt for <strong>gold</strong>.They arrived at Virginia in 1607.They named the <strong>James River</strong> and bulid the <strong>James town</strong>.)</li></ul></li><li><p>The pre-revolutionary writing in the colonies was essentially of two kinds:   分为两类</p><ol><li>Practical matter-of-fact accounts of farming,hunting,travel,etc.designed to inform people “at home” what life was like in the new world,and,often,to induce their immigration</li><li>Highly theoretical,generally polemical,discussions of religious questions</li></ol></li></ul><h2 id="The-first-American-writer"><a href="#The-first-American-writer" class="headerlink" title="The first American writer"></a>The first American writer</h2><ul><li><p>The first writings that we call American were the narratives and journals of these settlements.They wrote about their voyage to the new land,their lives in the new land,their dealings with indians.</p></li><li><p>Captain John Smith is the first American writer.</p></li><li><p>A true Relation of such Occurrences and Accidents of Note as Hath Happened in verginia since the First Planting of That Colony.(1608)</p></li><li><p>A Map of virginia: A Description of the Country(1612)</p></li><li><p>General History of Virginia(1624):the Indian princess Pocahontas.</p></li><li><p><strong>Captain John Smith</strong></p><ul><li>was one of the first early 17th century British settlers in North America.</li><li>One of the things he wrote about that has become an American legend was his capture by the Indians and his rescue by the famous Indian Princess,Pocahontas.</li><li>宝嘉康蒂</li></ul></li></ul><h2 id="Puritan-Thoughts-（重点）"><a href="#Puritan-Thoughts-（重点）" class="headerlink" title="Puritan Thoughts   （重点）"></a>Puritan Thoughts   （重点）</h2><ul><li>the origin of puritan<ul><li>in the mediaeval Europe,there was widespread religious revolution.In the 16th Century,the English King Henry VIII(At that time)，the Catholics were not allowed to divorce unless they have the Pope’s permission.</li><li>Henry VIII wanted to divorce his wife because she couldn‘t bear him a son.But the pope didn’t allow him    to divorce,so he broke away the roman catholics Church&amp;established the Church of England.</li><li>But there was no radical difference between the doctrines of the Church of England and the Catholic Church.A group of people thought the church of England was too Catholic and wanted to purify the church.</li><li>Then came the name Puritans.</li></ul></li></ul><ul><li>Puritanism is the practises and beliefs on the Puritans.<ul><li>The puritans were originally members of a division of the Protestant Church,who came into existence in the reigns of Queen Elizabeth and King James I.</li><li>The first settlers who became the founding fathers of the American nation were quite a few of them Puritans.</li><li>They came to America out of various reasons,but it should be remembered that they were a group of serious,religious people,advocating highly religious and moral principles.As the word itself hints,Puritans wanted to purify their religous beliefs and practices.They felt that the Church of England was too close to the Church of Rome in doctrine from worship,and organization of authority.</li></ul></li></ul><h3 id="主要教义-predestination"><a href="#主要教义-predestination" class="headerlink" title="主要教义 predestination"></a>主要教义 predestination</h3><ol><li>God’s elect<ul><li>Puritans believed they are predestined before they were born.</li><li>Nothing or no good work can change their fate.</li><li>They believed the success of one’s business is the sign to show he is the God‘s elect.So the Puritans works very hard,spend very little and invest more for the future business.They lived a very frugal life.This is their ethics.</li></ul></li><li>Original sin and total depravity<ul><li>Man is born sinful.This determines some puritans pessimistic attitude towards life.</li></ul></li><li>Limited atonement(the salvation of a selected few)</li><li>theocracy  政教合一<ul><li>They combined state with religion.Their government is at least not a liberal one</li><li>The puritans established American tradition–intolerant moralism.They strictly punished drunks,adultery&amp;heretics</li><li>Puritans changed gradually due to the severity of frontier environment.</li></ul></li></ol><h3 id="影响Influence"><a href="#影响Influence" class="headerlink" title="影响Influence"></a>影响Influence</h3><ol><li>its optimism<ul><li>American literature was from the outset conditioned by the Puritan heritage.It can be said American literature is based on the Biblical myth.After Adam and Eve were driven out of the Garden of Eden,man have on illusion to restore the paradise.The puritans,after arriving at America,believing that God must have sent them to this new land to restore the lost paradise,to build the wildness into a new Garden of Eden.Fired with such a strong sense of mission,they treated life with a tremendous amount of optimism.The optimistic Puritans has exerted a great influence on American literature.</li></ul></li><li>Puritan’s metaphorical mode of perception changed gradually into a literary symbolism.</li></ol><h2 id="American-Dream"><a href="#American-Dream" class="headerlink" title="American Dream"></a>American Dream</h2><ul><li><p>The <strong>American</strong> <strong>Dream</strong> is a national ethos of the United States,a set of ideals in which freedom includes….</p></li><li><p>The idea of the American Dream is rooted in the United States Declaration of Independence which proclaims that”all men are created equal” and that they are “endowed by their Creator with certain inalienable Rights”including “life,Liberty and the pursuit of Happiness.”</p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英语二专 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 美国文学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.8 安全性测试</title>
+      <link href="/posts/41073.html"/>
+      <url>/posts/41073.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="安全性测试定义"><a href="#安全性测试定义" class="headerlink" title="安全性测试定义"></a>安全性测试定义</h1><h2 id="软件安全性测试就是"><a href="#软件安全性测试就是" class="headerlink" title="软件安全性测试就是"></a>软件安全性测试就是</h2><ul><li>检验系统权限设置有效性</li><li>防范违法入侵的能力</li><li>数据备份和恢复能力等</li><li>设法找出各种安全性漏洞</li></ul><h2 id="漏洞举例："><a href="#漏洞举例：" class="headerlink" title="漏洞举例："></a>漏洞举例：</h2><ul><li>跨站点脚本(cross-site scripting , XSS)攻击</li><li>SQL注入式漏洞</li><li>缓冲区溢出</li><li>不安全的数据存储或传递</li><li>不安全的配置管理</li><li>有问题的访问控制、权限分配有问题</li><li>口令设置不严、包括长度、构成和更新频</li><li>暴露的端口或入口</li></ul><h1 id="安全性测试的范围"><a href="#安全性测试的范围" class="headerlink" title="安全性测试的范围"></a>安全性测试的范围</h1><ul><li>系统级别的安全性</li><li>应用程序级别的安全性（important）<ul><li>用户权限</li><li>数据输入验证</li><li>敏感数据加密</li><li>数据存储安全性</li><li>用户口令</li><li>验证系统的日志文件是否得到保护</li></ul></li></ul><h1 id="web安全性测试"><a href="#web安全性测试" class="headerlink" title="web安全性测试"></a>web安全性测试</h1><ul><li>跨站脚本攻击</li><li>SQL注入式攻击</li><li>URL和API的身份验证</li><li>其他</li></ul><h1 id="跨站脚本攻击"><a href="#跨站脚本攻击" class="headerlink" title="跨站脚本攻击"></a>跨站脚本攻击</h1><ul><li>在页面某些输入域中使用跨站脚本（写入一段javascript）来发送恶意代码给没有发觉的用户，让浏览器执行document.write等危险指令<ul><li>窃取用户的资料或者信息</li></ul></li></ul><h1 id="输入域验证"><a href="#输入域验证" class="headerlink" title="输入域验证"></a>输入域验证</h1><ul><li>防止<ul><li>HTML标签：&lt;…&gt;…&lt;/…&gt;</li><li>转义字符：&amp;amp(&amp;);&amp;lt(&lt;);&amp;gt(&lt;);&amp;nbsp(空格)</li><li>脚本语言，如javascript <script language="javascript">......</script></li><li>特殊字符： ‘ ‘ &lt;&gt; /</li></ul></li><li>最好进行更严格的保护和验证</li></ul><h1 id="SQL注入式攻击"><a href="#SQL注入式攻击" class="headerlink" title="SQL注入式攻击"></a>SQL注入式攻击</h1><ul><li>根据SQL语句的编写规则，附加一个永远为”真”的条件<ul><li>使系统中的某个认证条件总是成立</li><li>从而欺骗系统、躲过认证</li><li>进而侵入系统</li></ul></li></ul><h1 id="安全性测试工具的评估标准"><a href="#安全性测试工具的评估标准" class="headerlink" title="安全性测试工具的评估标准"></a>安全性测试工具的评估标准</h1><ul><li>支持常见的web服务器平台</li><li>能同时提供对源代码和二进制文件进行扫描的功能</li><li>漏洞检测和纠正分析</li><li>检测实时系统的问题</li><li>不改变被测试的软件，不影响代码</li><li>良好的报告</li><li>非安全专业认识也易于上手</li><li>可管理部署的多种扫描器、尽可能小的错误误差等</li></ul><h1 id="常见的安全性测试工具"><a href="#常见的安全性测试工具" class="headerlink" title="常见的安全性测试工具"></a>常见的安全性测试工具</h1><p><img src="/posts/41073/%E5%AE%89%E5%85%A8%E6%80%A7%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7.jpg" alt="安全性测试工具"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.7 兼容性测试</title>
+      <link href="/posts/14844.html"/>
+      <url>/posts/14844.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="兼容性测试的定义"><a href="#兼容性测试的定义" class="headerlink" title="兼容性测试的定义"></a>兼容性测试的定义</h1><p>兼容性测试</p><ul><li>是在 <strong>不同软硬件环境</strong> 下，验证软件系统能否正常地运行</li><li>这些软硬件一般有但不限于以下种类：<ul><li>硬件 hardware</li><li>操作系统 </li><li>数据库 </li><li>浏览器 </li><li>第三方系统</li><li>内部业务系统</li><li>自身系统的不同版本的用户数据</li></ul></li></ul><h1 id="兼容性测试的内容"><a href="#兼容性测试的内容" class="headerlink" title="兼容性测试的内容"></a>兼容性测试的内容</h1><ul><li>硬件兼容性的测试</li><li>数据兼容性的测试</li><li>系统版本之间的兼容性</li></ul><ul><li>向后兼容：<ul><li>指新发布的软件版本可以使用该软件的以前版本所产生的数据</li></ul></li><li>向前兼容：<ul><li>指在设计和开发一个新版本时，考虑如何和未来版本的数据兼容</li></ul></li></ul><h1 id="系统兼容性测试"><a href="#系统兼容性测试" class="headerlink" title="系统兼容性测试"></a>系统兼容性测试</h1><ul><li>B/S系统兼容性测试（考虑兼容哪个浏览器）</li><li>C/S系统兼容性测试（考虑兼容哪个客户端）</li></ul><h1 id="数据兼容性测试"><a href="#数据兼容性测试" class="headerlink" title="数据兼容性测试"></a>数据兼容性测试</h1><ul><li>是否遵守统一的国际标准、国家标准或业界认可的事实标准等</li><li>提供相应的导入、导出功能</li><li>剪贴板或ODBC等类似方法</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.6 性能测试工具</title>
+      <link href="/posts/30377.html"/>
+      <url>/posts/30377.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="特性及其使用"><a href="#特性及其使用" class="headerlink" title="特性及其使用"></a>特性及其使用</h1><ul><li>能模拟实际用户的 <strong>操作行为</strong>，<ul><li><strong>记录和回放</strong> <strong>多用户</strong> 测试中的 <strong>事务处理过程</strong></li><li><strong>自动生成</strong>相应的 <strong>测试脚本</strong></li></ul></li><li>能针对 <strong>脚本</strong> 进行修改<ul><li>增加 <strong>逻辑控制</strong></li><li>完成 <strong>参数化</strong> 和 <strong>数据关联</strong></li></ul></li><li>可以设置不同的 <strong>应用环境和场景</strong>，通过 <strong>虚拟用户</strong> 执行相应的测试脚本</li><li>通过 <strong>系统监控工具</strong> 获得系统性能的相关指标的值</li></ul><h1 id="开源工具"><a href="#开源工具" class="headerlink" title="开源工具"></a>开源工具</h1><h2 id="nGrinder"><a href="#nGrinder" class="headerlink" title="nGrinder"></a>nGrinder</h2><ul><li>是一个基于Grinder 开发的、易于管理和使用的、分布式性能测试系统</li></ul><h2 id="Flood"><a href="#Flood" class="headerlink" title="Flood"></a>Flood</h2><ul><li>是人们经常使用的一个Web性能测试工具</li></ul><h2 id="Siege"><a href="#Siege" class="headerlink" title="Siege"></a>Siege</h2><ul><li>是一个开源的web压力测试和评测系统</li></ul><h2 id="openSTA"><a href="#openSTA" class="headerlink" title="openSTA"></a>openSTA</h2><ul><li>可以模拟大量的虚拟用户来完成性能测试</li><li>并通过script来完成丰富的自定义设置</li></ul><h2 id="DBMonster"><a href="#DBMonster" class="headerlink" title="DBMonster"></a>DBMonster</h2><ul><li>是一个生成随机数据</li><li>用来测试SQL数据库的压力测试工具</li></ul><h2 id="LoadSim"><a href="#LoadSim" class="headerlink" title="LoadSim"></a>LoadSim</h2><ul><li>网络应用程序的负载模拟器</li></ul><h1 id="商业工具"><a href="#商业工具" class="headerlink" title="商业工具"></a>商业工具</h1><ul><li>HP LoadRunner</li><li>IBM Rational performance Tester</li><li>Radview webload</li><li>compuware QA Load</li><li>Quest Benchmark Factory</li><li>微软WAS (web access stress test)</li><li>Paessler Webserver Stress Tool</li><li>MINQ PureLoad</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7.5 压力测试</title>
+      <link href="/posts/27406.html"/>
+      <url>/posts/27406.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="压力测试的定义"><a href="#压力测试的定义" class="headerlink" title="压力测试的定义"></a>压力测试的定义</h1><ul><li>是在系统（eg：CPU、内存、网络带宽等）处于 <strong>饱和</strong> 状态下</li><li>测试系统<ul><li>是否还具有正常的 <strong>会话</strong> 能力、<strong>数据处理</strong> 能力</li><li>或 是否会 <strong>出现错误</strong></li></ul></li><li>以检查软件系统对 <strong>异常情况的抵抗</strong> 能力</li><li>找出 <strong>性能瓶颈</strong>、<strong>功能不稳定性</strong> 等问题</li></ul><h1 id="压力测试的类型"><a href="#压力测试的类型" class="headerlink" title="压力测试的类型"></a>压力测试的类型</h1><h2 id="稳定性压力测试"><a href="#稳定性压力测试" class="headerlink" title="稳定性压力测试"></a>稳定性压力测试</h2><ul><li>高负载下持续运行24小时以上的压力测试</li></ul><h2 id="破坏性压力测试"><a href="#破坏性压力测试" class="headerlink" title="破坏性压力测试"></a>破坏性压力测试</h2><ul><li>通过不断加载的手段</li><li>快速总成系统的崩溃</li><li>让问题尽快地暴露出来</li></ul><h2 id="渗入测试"><a href="#渗入测试" class="headerlink" title="渗入测试"></a>渗入测试</h2><ul><li><p><strong>soak</strong> <strong>test</strong></p></li><li><p>通过长时间运行</p></li><li><p>使问题逐渐渗透出来</p></li><li><p>从而发现</p><ul><li><p>内存泄漏</p></li><li><p>垃圾收集 <strong>GC</strong></p></li><li><p>或系统的其他问题</p><p>以检验系统的 <strong>健壮性</strong></p></li></ul></li></ul><h2 id="峰谷测试"><a href="#峰谷测试" class="headerlink" title="峰谷测试"></a>峰谷测试</h2><ul><li><strong>peak-rest test</strong></li><li>采用 <strong>高低突变加载方式</strong> 进行<ul><li>先加载到 <strong>高水平</strong> 的负载</li><li>然后 <strong>急剧降低</strong> 负载</li><li><strong>稍微平息</strong> 一段时间</li><li>再加载到 <strong>高水平</strong> 的负载</li></ul></li><li><strong>重复</strong> 这样的过程</li><li>容易发现问题的 <strong>蛛丝马迹</strong></li><li>最终找到问题的 <strong>根源</strong></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件测试 </tag>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>7.4 性能测试</title>
       <link href="/posts/11040.html"/>
       <url>/posts/11040.html</url>
       
-        <content type="html"><![CDATA[<h1 id="如何确定性能需求"><a href="#如何确定性能需求" class="headerlink" title="如何确定性能需求"></a>如何确定性能需求</h1><h2 id="性能指标预期来源"><a href="#性能指标预期来源" class="headerlink" title="性能指标预期来源"></a>性能指标预期来源</h2><ol><li><strong>最终用户的体验</strong>      eg:2-5-10原则</li><li><strong>商业需求</strong>        eg：”比竞争对手的产品好”</li><li><strong>技术需求</strong>        eg：”cpu使用率不超过70%”</li><li><strong>标准要求</strong></li></ol><h2 id="包含下列性能指标："><a href="#包含下列性能指标：" class="headerlink" title="包含下列性能指标："></a>包含下列性能指标：</h2><ol><li><strong>时间</strong> time<ul><li>响应时间</li><li>页面下载时间等等</li></ul></li><li><strong>容量</strong> capacity<ul><li>正常工作能承受的最大负载</li><li>eg：<ul><li>最大并发用户数</li><li>最大数据容量</li><li>最大在线用户数</li></ul></li></ul></li><li><strong>吞吐量</strong> throughput<ul><li>eg：<ul><li>每秒请求数RPS</li><li>每秒点击数HPS</li><li>每秒事务数TPS</li><li>每秒接受或发送的数据量等</li></ul></li></ul></li><li><strong>系统资源利用率</strong> utilization<ul><li>eg：<ul><li>cpu</li><li>memory<ul><li>使用率</li></ul></li><li>等等</li></ul></li></ul></li></ol><h2 id="不同角色对于性能指标关注什么"><a href="#不同角色对于性能指标关注什么" class="headerlink" title="不同角色对于性能指标关注什么"></a>不同角色对于性能指标关注什么</h2><h3 id="用户："><a href="#用户：" class="headerlink" title="用户："></a>用户：</h3><ul><li>响应时间</li></ul><h3 id="产品市场团队"><a href="#产品市场团队" class="headerlink" title="产品市场团队"></a>产品市场团队</h3><ul><li>容量</li><li>数据吞吐量</li></ul><h3 id="开发团队"><a href="#开发团队" class="headerlink" title="开发团队"></a>开发团队</h3><ul><li>系统资源占用率</li></ul><h1 id="性能测试类型"><a href="#性能测试类型" class="headerlink" title="性能测试类型"></a>性能测试类型</h1><h1 id="性能测试步骤"><a href="#性能测试步骤" class="headerlink" title="性能测试步骤"></a>性能测试步骤</h1><h1 id="一些常见的性能问题"><a href="#一些常见的性能问题" class="headerlink" title="一些常见的性能问题"></a>一些常见的性能问题</h1><h1 id="容量测试"><a href="#容量测试" class="headerlink" title="容量测试"></a>容量测试</h1><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="如何确定性能需求"><a href="#如何确定性能需求" class="headerlink" title="如何确定性能需求"></a>如何确定性能需求</h1><h2 id="性能指标预期来源"><a href="#性能指标预期来源" class="headerlink" title="性能指标预期来源"></a>性能指标预期来源</h2><ol><li><strong>最终用户的体验</strong>      eg:2-5-10原则</li><li><strong>商业需求</strong>        eg：”比竞争对手的产品好”</li><li><strong>技术需求</strong>        eg：”cpu使用率不超过70%”</li><li><strong>标准要求</strong></li></ol><h2 id="包含下列性能指标："><a href="#包含下列性能指标：" class="headerlink" title="包含下列性能指标："></a>包含下列性能指标：</h2><ol><li><strong>时间</strong> time<ul><li>响应时间</li><li>页面下载时间等等</li></ul></li><li><strong>容量</strong> capacity<ul><li>正常工作能承受的最大负载</li><li>eg：<ul><li>最大并发用户数</li><li>最大数据容量</li><li>最大在线用户数</li></ul></li></ul></li><li><strong>吞吐量</strong> throughput<ul><li>eg：<ul><li>每秒请求数RPS</li><li>每秒点击数HPS</li><li>每秒事务数TPS</li><li>每秒接受或发送的数据量等</li></ul></li></ul></li><li><strong>系统资源利用率</strong> utilization<ul><li>eg：<ul><li>cpu</li><li>memory<ul><li>使用率</li></ul></li><li>等等</li></ul></li></ul></li></ol><h2 id="不同角色对于性能指标关注什么"><a href="#不同角色对于性能指标关注什么" class="headerlink" title="不同角色对于性能指标关注什么"></a>不同角色对于性能指标关注什么</h2><h3 id="用户："><a href="#用户：" class="headerlink" title="用户："></a>用户：</h3><ul><li>响应时间</li></ul><h3 id="产品市场团队"><a href="#产品市场团队" class="headerlink" title="产品市场团队"></a>产品市场团队</h3><ul><li>容量</li><li>数据吞吐量</li></ul><h3 id="开发团队"><a href="#开发团队" class="headerlink" title="开发团队"></a>开发团队</h3><ul><li>系统资源占用率</li></ul><h1 id="性能测试类型"><a href="#性能测试类型" class="headerlink" title="性能测试类型"></a>性能测试类型</h1><h2 id="性能验证测试"><a href="#性能验证测试" class="headerlink" title="性能验证测试"></a>性能验证测试</h2><ul><li>验证事先已定义的系统性能指标、系统能否满足系统的性能需求</li></ul><h2 id="性能基准测试"><a href="#性能基准测试" class="headerlink" title="性能基准测试"></a>性能基准测试</h2><ul><li>在系统标准配置下获得有关的性能指标数据，作为将来性能改进的基准线</li></ul><h2 id="性能规划测试"><a href="#性能规划测试" class="headerlink" title="性能规划测试"></a>性能规划测试</h2><ul><li>在多种 <strong>特定</strong> 的环境下，获得 <strong>不同配置</strong> 的系统的 <strong>性能指标</strong> ，从而决定在系统部署时采用什么样的 <strong>软</strong>、<strong>硬件配置</strong></li></ul><h2 id="容量测试"><a href="#容量测试" class="headerlink" title="容量测试"></a>容量测试</h2><ul><li>可以看作是 <strong>性能</strong> 的测试的一种</li><li>因为系统的容量可以看作 <strong>系统性能指标</strong> 之一</li></ul><h1 id="性能测试步骤"><a href="#性能测试步骤" class="headerlink" title="性能测试步骤"></a>性能测试步骤</h1><ol><li>确定性能测试 <strong>需求</strong></li><li><strong>计划和设计测试</strong> ；包括确定关键业务流程、测试类型和测试方法，选择合适的测试工具、设计测试场景等等</li><li><strong>测试工具</strong> 的选择</li><li>配置 <strong>测试环境</strong>、尽量接近实际运行环境、即建立仿真环境作为性能测试环境，测试结果才能可信</li><li>实现 <strong>测试设计</strong>（开发测试脚本）</li><li><strong>执行测试</strong></li><li><strong>分析</strong> 测试结果</li><li>重复4-6步骤，直至 <strong>测试计划完成</strong> ，结果 <strong>满意</strong></li><li>提交 <strong>性能测试报告</strong></li></ol><h1 id="一些常见的性能问题"><a href="#一些常见的性能问题" class="headerlink" title="一些常见的性能问题"></a>一些常见的性能问题</h1><ul><li><strong>资源泄漏</strong>，包括内存泄漏</li><li><strong>资源瓶颈</strong>，内部资源（线程、放入池的对象）变得稀疏</li><li>cpu使用率达到<strong>100</strong>%、系统 <strong>被锁定</strong> （eg：鼠标键盘不响应）等等</li><li>线程 <strong>死锁</strong>、线程 <strong>阻塞</strong> 等等</li><li><strong>数据库连接</strong> 成为性能瓶颈（数据库连接时间过长）</li><li>查询 <strong>速度慢</strong> 或 列表 <strong>效率低</strong>（eg:没用上索引）</li><li>受 <strong>外部系统影响</strong> 越来越大</li></ul><h1 id="容量测试-1"><a href="#容量测试-1" class="headerlink" title="容量测试"></a>容量测试</h1><h2 id="容量测试的定义"><a href="#容量测试的定义" class="headerlink" title="容量测试的定义"></a>容量测试的定义</h2><ul><li><p><strong>capacity</strong> test</p></li><li><p>通过负载测试或其它测试方法，预先分析出反应软件系统应用特征的某项指标的极限值（eg：最大并发用户数、数据库记录数等等）</p></li><li><p>在其极限值状态下系统主要功能还能保持正常运行</p></li></ul><h2 id="与其他测试的关系"><a href="#与其他测试的关系" class="headerlink" title="与其他测试的关系"></a>与其他测试的关系</h2><ul><li>属于性能测试的一种</li></ul><h2 id="采用的方法"><a href="#采用的方法" class="headerlink" title="采用的方法"></a>采用的方法</h2><ul><li>一般采用 逐步加载 的负载测试方法</li><li>也可以<ul><li>先采用 <strong>逐步加载</strong> 的方式</li><li>获得一个 基本的 <strong>容量值或容量范围</strong></li><li>再考虑用 <strong>一次性加载方式</strong></li><li>来决定 <strong>实际可支持</strong> 的 <strong>容量值</strong></li></ul></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
