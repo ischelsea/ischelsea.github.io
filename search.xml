@@ -4,6 +4,83 @@
   
     
     <entry>
+      <title>Jmeter的第一个实验</title>
+      <link href="/posts/12105.html"/>
+      <url>/posts/12105.html</url>
+      
+        <content type="html"><![CDATA[<p>首先打开jmeter文件夹内bin目录下的 <code>jmeter.bat</code>  从而运行jmeter程序</p><p>再在jmeter中 <code>open file</code>,打开实验要运行的文件， <code>first test plan</code></p><p><img src="/posts/12105/1.png" alt="1"></p><p><code>comment</code>：注释</p><p>刚创立test plan时内部是空的，在设置完名称和注释之后先记得把这个test plan保存</p><p>保存完后，为了利用这个test plan做些东西，就要 add something</p><p>即：</p><ul><li>右键first test plan</li><li>add</li><li>Threads（Users）</li><li>Thread Group<ul><li>即成功添加第一个线程组</li></ul></li></ul><p>但是添加完这个线程组之后还是做不了什么事情，要再在 <code>thread group</code>里 添加一些设置</p><ul><li><p>点击thread group:</p><p><img src="/posts/12105/2.png" alt="2"></p></li><li><p><code>Number of Threads(users)</code>:</p><ul><li>即需要多少线程 或者可以说虚拟用户</li></ul></li><li><p><code>Ramp-up period</code>：</p><ul><li>即这些用户用多久时间生成</li></ul></li><li><p><code>Loop count</code>:</p><ul><li>即循环次数</li></ul></li></ul><p>因为这个test plan意图访问web系统的界面类</p><p>我们不直接对界面进行操作，而是对接口发送请求</p><p>在jmeter中，所有的请求要发出去，都要用到 <code>Add</code>里面的 <code>Sampler</code>(采样器)  </p><p>其中有许多采样器，我们这个实验中使用 <code>Http request</code></p><p>其中设置好名称和网址，如图：</p><p><img src="/posts/12105/3.png" alt="3"></p><ul><li><code>port number</code><ul><li>端口号<ul><li>如果使用默认端口，可以不填</li></ul></li></ul></li><li><code>path</code><ul><li>路径</li><li>因为这里是要访问首页，所以不需要填路径</li></ul></li></ul><p>经过以上操作，我们已经有了一个可以发请求的采样器，现在可以来跑一下。</p><p>但是虽然这时候已经可以跑了，但是结果我们看不到</p><p>因此，需要增加 <code>listener</code>来查看结果</p><ul><li>右键Thread Group</li><li><code>add</code></li><li><code>listener</code></li><li>选择 <code>view results tree</code></li></ul><p>加上之后即可选择start，开始测试，并得到结果</p><p>如果要清除listener，即可选择右上角 <code>clear all</code>   （如果只是清掉当前的view result tree，按clear即可）</p><p>我们查看view result tree里面详情，可以看到一次httprequest包含了两次请求</p><p>这是因为被重定向了</p><p><img src="/posts/12105/4.png" alt="4"></p><p>通过以上操作，我们明白了这样添加线程组并运行</p><p>但我们也要知道，实际操作中还需要添加<code>Config element</code></p><ul><li><code>add</code></li><li><code>config element</code></li><li><code>Http request defaults</code></li></ul><p><img src="/posts/12105/5.png" alt="5"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>语言学 第一章</title>
+      <link href="/posts/17942.html"/>
+      <url>/posts/17942.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="语言学分类-按研究对象分"><a href="#语言学分类-按研究对象分" class="headerlink" title="语言学分类-按研究对象分"></a>语言学分类-按研究对象分</h2><ul><li>linguistics<ul><li>Theoretical Ling</li></ul></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英语二专 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 英语语言学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计组 第一章 绪论</title>
+      <link href="/posts/7573.html"/>
+      <url>/posts/7573.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-1-计算机的发展史"><a href="#1-1-计算机的发展史" class="headerlink" title="1.1 计算机的发展史"></a>1.1 计算机的发展史</h2><h3 id="1-1-1-计算简史"><a href="#1-1-1-计算简史" class="headerlink" title="1.1.1 计算简史"></a>1.1.1 计算简史</h3><h4 id="人类创造工具"><a href="#人类创造工具" class="headerlink" title="人类创造工具"></a>人类创造工具</h4><ul><li>机械工具</li><li>测试工具</li><li>计算工具</li></ul><h4 id="计算经历阶段"><a href="#计算经历阶段" class="headerlink" title="计算经历阶段"></a>计算经历阶段</h4><ul><li><p>手工计算</p></li><li><p>机械计算</p></li><li><p>电子计算</p></li></ul><h4 id="手工计算阶段"><a href="#手工计算阶段" class="headerlink" title="手工计算阶段"></a>手工计算阶段</h4><h5 id="计数工具"><a href="#计数工具" class="headerlink" title="计数工具"></a>计数工具</h5><ul><li>穴石、绳结、刻痕</li><li>十指</li><li>算盘<ul><li>应用时间最长</li><li>功能最完善</li><li>非自然化计数工具</li></ul></li><li>计算尺<ul><li>用长度模拟数值大小</li><li>可进行一些四则运算和复杂非四则运算</li></ul></li></ul><h5 id="计数法："><a href="#计数法：" class="headerlink" title="计数法："></a>计数法：</h5><ul><li>十进制<ul><li>是数学体系计数制基础</li></ul></li></ul><h5 id="口诀："><a href="#口诀：" class="headerlink" title="口诀："></a>口诀：</h5><ul><li>基本操作指令</li><li>算盘指令系统、珠算语言</li></ul><h5 id="缺陷"><a href="#缺陷" class="headerlink" title="缺陷"></a>缺陷</h5><ul><li>人的技能水平、精力、智力影响计算速度、正确性</li><li>无法进行大的复杂运算</li></ul><h4 id="机械计算阶段"><a href="#机械计算阶段" class="headerlink" title="机械计算阶段"></a>机械计算阶段</h4><ul><li><p>pascal[法]</p><ul><li>1642年</li><li>可做成加减法的机械计算起</li></ul></li><li><p>Leibnitz[德]</p><ul><li>1673年</li><li>改进pascal设计</li><li>增加乘除运算</li></ul></li><li><p>19世纪</p><ul><li>手摇计算机商品化生产</li></ul></li><li><p>Babbage[英]  计算机之父</p><ul><li>首先提出整个计算过程自动化概念</li><li>设计第一台通用自动时序控制机械式计算机<ul><li>但未能制造出来</li></ul></li><li>认为自动计算机必须有五大功能<ul><li>输入</li><li>输出</li><li>处理</li><li>存储</li><li>控制</li></ul></li><li>提出计算机实现自动计算的前提<ul><li>具有记忆功能</li><li>能记住数据和要进行的步骤</li><li>并按步骤规定对机器进行自动控制</li></ul></li></ul></li><li><p>缺陷</p><ul><li>频繁的人工干预限制计算速度提高</li></ul></li></ul><h4 id="电子计算阶段"><a href="#电子计算阶段" class="headerlink" title="电子计算阶段"></a>电子计算阶段</h4><h5 id="电子计算"><a href="#电子计算" class="headerlink" title="电子计算"></a>电子计算</h5><ul><li>理论基础：<ul><li>二进制<ol><li>中国最早使用</li><li>阳爻-&gt;1  阴爻-&gt;0</li></ol></li></ul></li></ul><h5 id="George-Boole-英"><a href="#George-Boole-英" class="headerlink" title="George Boole [英]"></a>George Boole [英]</h5><ul><li><p>发表：</p><ul><li>《逻辑的数学分析》</li><li>《思维规律的研究》<ul><li>两本书核心：<ul><li>现代《布尔代数》精髓</li></ul></li></ul></li></ul></li><li><p>把运算和逻辑理论建立在</p><ul><li>0和1两种数值</li><li>”与“”或“”非“三种基本逻辑运算</li></ul></li><li><p>是现代数字式设备理论基础</p></li></ul><h5 id="V-Atanasolf-美-伊阿华大学"><a href="#V-Atanasolf-美-伊阿华大学" class="headerlink" title="V.Atanasolf 美 伊阿华大学"></a>V.Atanasolf 美 伊阿华大学</h5><ul><li><p>首次</p><ul><li>使用电子原件</li><li>按二进制原理<ul><li>制造一台电子管计算机</li></ul></li></ul></li><li><p>在Cliffod Berry协助下</p><ul><li>制造出一台电子管计算机Atanasoff Berry Computer</li></ul></li></ul><h5 id="ENIAC-Electronic-Numerical-Integrator-and-Computer"><a href="#ENIAC-Electronic-Numerical-Integrator-and-Computer" class="headerlink" title="ENIAC Electronic Numerical Integrator and Computer"></a>ENIAC Electronic Numerical Integrator and Computer</h5><ul><li>地位：<ul><li>世界上第一台电子数字计算机（试运行：1945）</li><li>现代电子数字计算机始祖</li></ul></li><li>大小：<ul><li>高8英尺 长100英尺 宽3英尺 </li><li>18000个真空管 1500个电子继电器</li><li>18000个电容 70000个电阻</li><li>重30吨</li></ul></li><li>计算：<ul><li>弹道计算：<ul><li>60s射程弹道计算为30s</li></ul></li><li>性能：<ul><li>不高<ul><li>5000次加法运算</li><li>50次乘法运算</li></ul></li><li>每秒可进行<ul><li>平方</li><li>立方</li><li>sin</li><li>cos<ul><li>数值运算</li></ul></li></ul></li></ul></li><li>其他领域<ul><li>eg：<ul><li>天气预报</li><li>原子核能</li><li>风洞试验</li></ul></li><li>关于原子裂变的能量计算<ul><li>冯诺依曼邀请</li><li>促进世界第一颗原子弹问世</li></ul></li></ul></li><li>圆周率计算（1949）<ul><li>70小时，计算至小数点后2037位</li><li>人类第一次用机器算的最精确圆周率数值</li></ul></li></ul></li><li>1955年 退休</li></ul><h5 id="EDSAC-英-剑桥"><a href="#EDSAC-英-剑桥" class="headerlink" title="EDSAC [英 剑桥]"></a>EDSAC [英 剑桥]</h5><ul><li>Electronic Delay Storage Automatic Computer<ul><li>世界上第一台通用电子数字计算机<ul><li>人类开始进入电子数字计算机时代</li></ul></li></ul></li></ul><h3 id="1-1-2-计算机发展简史"><a href="#1-1-2-计算机发展简史" class="headerlink" title="1.1.2 计算机发展简史"></a>1.1.2 计算机发展简史</h3><h4 id="经历4代："><a href="#经历4代：" class="headerlink" title="经历4代："></a>经历4代：</h4><ul><li>第一代计算机 20世纪40代中-50末</li><li>第二代计算机 20世纪50中后-60中</li><li>第三代计算机 20世纪60中-70中</li><li>第四代计算机 20世纪70中-今</li></ul><h4 id="标志"><a href="#标志" class="headerlink" title="标志"></a>标志</h4><ul><li><p>电子器件</p><ul><li>是划分时代最重要标志</li></ul></li></ul><h4 id="第一代计算机：电子管计算机"><a href="#第一代计算机：电子管计算机" class="headerlink" title="第一代计算机：电子管计算机"></a>第一代计算机：电子管计算机</h4><ul><li>逻辑元件：<ul><li>电子管</li></ul></li><li>主存储器：<ul><li>阴极射线管</li><li>声泵延迟线</li><li>磁带、磁鼓</li></ul></li><li>数据表示<ul><li>定点表示</li></ul></li><li>编程语言：<ul><li>机器语言</li><li>汇编语言</li></ul></li><li>机器：<ul><li>ENIAC\EDSCAC</li><li>冯诺依曼为首研制的存储程序计算机<ul><li>IAS</li><li>UNIVAC-1</li><li>IBM 704</li></ul></li><li>我国自己研制的第一代计算机<ul><li>主要<ul><li>104机</li><li>103机</li><li>119机</li></ul></li></ul></li></ul></li></ul><h4 id="第二代计算机：晶体管计算机"><a href="#第二代计算机：晶体管计算机" class="headerlink" title="第二代计算机：晶体管计算机"></a>第二代计算机：晶体管计算机</h4><ul><li><h5 id="逻辑元件："><a href="#逻辑元件：" class="headerlink" title="逻辑元件："></a>逻辑元件：</h5><ul><li>晶体管</li></ul></li><li><p>主存储器元件：</p><ul><li>磁芯</li></ul></li><li><p>运算：</p><ul><li>引入浮点运算硬件</li></ul></li><li><p>建立：</p><ul><li>子程序库</li><li>批处理管理程序</li></ul></li><li><p>语言：</p><ul><li>FORTRAN</li><li>COBOL</li><li>ALGOL<ul><li>等高级语言<ul><li>简化了程序设计</li></ul></li></ul></li></ul></li><li><p>优点：</p><ul><li>体积小</li><li>功耗快</li><li>速度快</li><li>可靠性高</li></ul></li><li><p>机器：</p><ul><li>国外：<ul><li>IBM 7040,7070,7090</li><li>CDC 1604</li></ul></li><li>国内：<ul><li>109机</li><li>441B机</li><li>108机</li></ul></li></ul></li></ul><h4 id="第三代计算机"><a href="#第三代计算机" class="headerlink" title="第三代计算机"></a>第三代计算机</h4><ul><li>基础器件：<ul><li>集成电路<ul><li>微电子技术与计算机技术相结合的一大突破</li></ul></li></ul></li><li>电路：<ul><li>采用<ul><li>小规模</li><li>中规模<ul><li>集成电路</li></ul></li></ul></li></ul></li><li>存储器：<ul><li>半导体存储器</li></ul></li><li>改进：<ul><li>引进多道程序和并行处理等新的技术</li><li>操作系统日趋成熟</li></ul></li><li>机器：<ul><li>国外：<ul><li>IBM 360系列</li><li>CDC 6600/7600系列</li><li>CYBER系列</li></ul></li><li>国产:<ul><li>150,151<ul><li>DJS-2000系列</li><li>DJS-1000系列</li></ul></li></ul></li></ul></li></ul><h4 id="第四代计算机"><a href="#第四代计算机" class="headerlink" title="第四代计算机"></a>第四代计算机</h4><ul><li>电路：<ul><li>大规模集成电路</li><li>超大规模集成电路</li></ul></li><li>改进：<ul><li>技术：<ul><li>并行处理</li><li>多机系统</li><li>分布式计算机</li><li>计算机网络<ul><li>等技术飞速发展</li></ul></li></ul></li><li>机器：<ul><li>微处理机、微型计算机<ul><li>迅速发展</li></ul></li><li>小型机、超级小型机、大型机、巨型机<ul><li>不断问世</li></ul></li></ul></li></ul></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机组成原理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机组成原理 </tag>
+            
+            <tag> 绿皮书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>7-10-可靠性测试</title>
       <link href="/posts/41234.html"/>
       <url>/posts/41234.html</url>
