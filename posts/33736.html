@@ -528,7 +528,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    35.4k
+                    35.2k
                 </div>
                 
 
@@ -571,12 +571,9 @@
 </ul>
 </li>
 </ul>
-<h4 id="3-5-1-1-MIPS32指令的指令格式与指令集"><a href="#3-5-1-1-MIPS32指令的指令格式与指令集" class="headerlink" title="3.5.1.1 MIPS32指令的指令格式与指令集"></a>3.5.1.1 MIPS32指令的指令格式与指令集</h4><ul>
-<li><p>指令字长固定为32位</p>
+<h4 id="3-5-1-1-MIPS32指令的指令格式与指令集"><a href="#3-5-1-1-MIPS32指令的指令格式与指令集" class="headerlink" title="3.5.1.1 MIPS32指令的指令格式与指令集"></a>3.5.1.1 MIPS32指令的指令格式与指令集</h4><p>指令字长固定为32位</p>
+<p>如果采用寄存器型寻址，指令中还需要给出寄存器号</p>
 <ul>
-<li>如果采用寄存器型寻址，指令中还需要给出寄存器号</li>
-</ul>
-</li>
 <li><p>指令类型有三种：R型，I型，J型</p>
 <ul>
 <li><p>R型指令：</p>
@@ -610,36 +607,7 @@
 <h5 id="R型指令"><a href="#R型指令" class="headerlink" title="R型指令"></a>R型指令</h5><ul>
 <li><p>register</p>
 </li>
-<li><p>指令长度是固定的</p>
-</li>
-<li><p>操作数和保存结果都通过寄存器进行</p>
-<ul>
-<li>在R型指令中，op是操作码<ul>
-<li>对于所有的R型指令，操作码全部为0</li>
-</ul>
-</li>
-<li>rs是一个寄存器的编号<ul>
-<li>对应第一个源操作数</li>
-</ul>
-</li>
-<li>rt是另一个寄存器的编号<ul>
-<li>对应第2个源操作数</li>
-</ul>
-</li>
-<li>rd也是一个寄存器编号<ul>
-<li>据此保存结果</li>
-</ul>
-</li>
-<li>sa是一个常数<ul>
-<li>通常在移位指令中使用</li>
-</ul>
-</li>
-<li>func字段是一个功能码<ul>
-<li>用于指定指令的具体功能</li>
-<li>因为R型指令的操作码都为零，所以需要功能说明字段来进行明确当前R型指令具体执行什么操作</li>
-</ul>
-</li>
-</ul>
+<li><p>Rs(5)</p>
 <p><img src="/posts/33736/R%E5%9E%8B%E6%8C%87%E4%BB%A4.png" alt=""></p>
 </li>
 </ul>
@@ -2654,38 +2622,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/33736.html">
+                <a href="/posts/42714.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpeg" class="responsive-img" alt="基于MIPS32指令集的CPU微架构设计">
+                        <img src="/medias/featureimages/18.jpeg" class="responsive-img" alt="sel">
                         
-                        <span class="card-title">基于MIPS32指令集的CPU微架构设计</span>
+                        <span class="card-title">sel</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            3.5.1 MIPS32的指令mips32是一种精简指令集
-mips32指令集是一种精简指令集
-指令的数量非常少
-指令也非常规整
-
-
-在运用MIPS32指令架构指令的时候
-要求存储器按字节编址
-这也意味着每一条MIPS2指令都需要存储占用四
+                            识别与操作文本框package sel;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.con
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-21
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -2694,12 +2657,15 @@ mips32指令集是一种精简指令集
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
-                        <span class="chip bg-color">计算机组成原理</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
+                    </a>
+                    
+                    <a href="/tags/selenium/">
+                        <span class="chip bg-color">selenium</span>
                     </a>
                     
                 </div>
@@ -2953,7 +2919,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">76.5k</span>&nbsp;字
+                class="white-color">83.5k</span>&nbsp;字
             
             
             
